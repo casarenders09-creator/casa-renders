@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" fill="none" role="img" aria-label="Modular kitchen design inspiration placeholder">
+  <rect width="800" height="1000" fill="#F7F2E8"/>
+  <rect x="80" y="180" width="640" height="420" rx="24" fill="#E4D4BE"/>
+  <rect x="120" y="220" width="560" height="80" rx="12" fill="#4B3528" opacity="0.18"/>
+  <rect x="120" y="340" width="260" height="220" rx="12" fill="#B88952" opacity="0.35"/>
+  <rect x="420" y="340" width="260" height="220" rx="12" fill="#FFFFFF" opacity="0.35"/>
+  <text x="80" y="920" fill="#4B3528" font-family="Georgia, serif" font-size="42">Modular Kitchen</text>
+</svg>

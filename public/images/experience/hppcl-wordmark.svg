@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" role="img" aria-labelledby="title desc">
+  <title id="title">Himachal Pradesh Power Corporation Limited</title>
+  <desc id="desc">A neutral company-name wordmark used until an approved HPPCL logo file is supplied.</desc>
+  <rect width="360" height="96" rx="18" fill="#F7F3EA"/>
+  <rect x="24" y="24" width="6" height="48" rx="3" fill="#1B6D9B"/>
+  <text x="48" y="49" fill="#173640" font-family="Arial, sans-serif" font-size="27" font-weight="800" letter-spacing="1.2">HPPCL</text>
+  <text x="48" y="68" fill="#5F747B" font-family="Arial, sans-serif" font-size="8.5" font-weight="700" letter-spacing="0.75">HIMACHAL PRADESH POWER CORPORATION LIMITED</text>
+</svg>

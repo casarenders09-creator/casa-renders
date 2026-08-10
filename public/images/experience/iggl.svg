@@ -1,0 +1,6 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 48" role="img" aria-label="IGGL">
+  <rect x="4" y="18" width="32" height="12" rx="6" fill="#0077B6"/>
+  <circle cx="12" cy="24" r="4" fill="#90E0EF"/>
+  <circle cx="28" cy="24" r="4" fill="#90E0EF"/>
+  <text x="44" y="30" fill="#023E8A" font-family="Arial,sans-serif" font-size="18" font-weight="700">IGGL</text>
+</svg>

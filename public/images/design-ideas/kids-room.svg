@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" fill="none" role="img" aria-label="Kids room design inspiration placeholder">
+  <rect width="800" height="1000" fill="#F7F2E8"/>
+  <rect x="100" y="150" width="600" height="320" rx="24" fill="#E4D4BE"/>
+  <circle cx="220" cy="650" r="70" fill="#B88952" opacity="0.35"/>
+  <circle cx="420" cy="690" r="50" fill="#4B3528" opacity="0.15"/>
+  <rect x="520" y="590" width="180" height="180" rx="20" fill="#B88952" opacity="0.25"/>
+  <text x="80" y="920" fill="#4B3528" font-family="Georgia, serif" font-size="48">Kids' Room</text>
+</svg>

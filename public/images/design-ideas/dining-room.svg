@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" fill="none" role="img" aria-label="Dining room design inspiration placeholder">
+  <rect width="800" height="1000" fill="#F7F2E8"/>
+  <rect x="120" y="420" width="560" height="160" rx="80" fill="#B88952" opacity="0.3"/>
+  <rect x="80" y="180" width="640" height="180" rx="24" fill="#E4D4BE"/>
+  <circle cx="200" cy="500" r="40" fill="#4B3528" opacity="0.15"/>
+  <circle cx="600" cy="500" r="40" fill="#4B3528" opacity="0.15"/>
+  <text x="80" y="920" fill="#4B3528" font-family="Georgia, serif" font-size="48">Dining Room</text>
+</svg>

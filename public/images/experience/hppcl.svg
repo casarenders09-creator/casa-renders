@@ -1,0 +1,5 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 48" role="img" aria-label="HPPCL">
+  <path d="M8 34 L8 22 Q20 14 32 22 L32 34 Z" fill="#0077B6"/>
+  <path d="M14 28h12" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="40" y="30" fill="#023E8A" font-family="Arial,sans-serif" font-size="16" font-weight="700">HPPCL</text>
+</svg>

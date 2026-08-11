@@ -18,7 +18,18 @@ export function TrustStrip() {
           <p>Practical confidence from brief to handover</p>
         </div>
       </Container>
-      <div className="why-marquee__viewport">
+      <div className="why-mobile-grid">
+        {trustPoints.map((item) => (
+          <article key={item.value}>
+            <b>{item.code}</b>
+            <div>
+              <strong>{item.value}</strong>
+              <span>{item.note}</span>
+            </div>
+          </article>
+        ))}
+      </div>
+      <div className="why-marquee__viewport why-marquee__viewport--desktop">
         <div className="why-marquee__track">
           {[...trustPoints, ...trustPoints].map((item, index) => (
             <article key={`${item.value}-${index}`} aria-hidden={index >= trustPoints.length}>

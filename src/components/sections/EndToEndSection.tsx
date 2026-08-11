@@ -62,7 +62,6 @@ export function EndToEndSection() {
               Browse reference directions across eight high-demand categories. Open any category to
               view a curated ten-image inspiration gallery.
             </p>
-            <span>Reference imagery · replaceable with Casa Renders projects</span>
           </div>
         </div>
 

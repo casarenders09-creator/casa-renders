@@ -32,6 +32,23 @@ export function HowItWorksSection() {
           </p>
         </div>
 
+        <div className="move-in-process__mobile-list" aria-label="Project process steps">
+          {processSteps.map((step, index) => (
+            <details key={`mobile-${step.step}`} open={index === 0}>
+              <summary>
+                <span>{String(step.step).padStart(2, "0")}</span>
+                <strong>{step.title}</strong>
+                <b aria-hidden="true">+</b>
+              </summary>
+              <div>
+                <SafeImage src={step.image} alt={`${step.title} reference`} loading="lazy" />
+                <p>{step.description}</p>
+                <small>{step.detail}</small>
+              </div>
+            </details>
+          ))}
+        </div>
+
         <div className="move-in-process__stepper" aria-label="Project process steps">
           {processSteps.map((step, index) => (
             <button

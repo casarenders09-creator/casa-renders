@@ -1118,3 +1118,64 @@
     font-size: 0.8rem;
   }
 }
+
+/* =========================================================
+   MOBILE MENU VIEWPORT FIX
+   Keep the entire menu on the paper surface and make the
+   panel itself scroll when all navigation items cannot fit.
+   ========================================================= */
+@media (max-width: 767px) {
+  .mobile-navigation {
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: auto !important;
+    width: 100% !important;
+
+    /* Fallback first, dynamic viewport second for iOS/Android browser chrome. */
+    height: 100vh !important;
+    height: 100dvh !important;
+    min-height: 100svh;
+    max-height: 100dvh !important;
+
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+
+    padding: 14px 20px max(20px, env(safe-area-inset-bottom)) !important;
+    background: var(--paper) !important;
+    scrollbar-width: none;
+  }
+
+  .mobile-navigation::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobile-navigation__top {
+    flex: 0 0 auto;
+    padding-bottom: 12px !important;
+  }
+
+  .mobile-navigation nav {
+    flex: 0 0 auto;
+    margin-top: 10px !important;
+  }
+
+  .mobile-navigation nav button {
+    min-height: 52px;
+    padding: 10px 8px !important;
+  }
+
+  .mobile-navigation nav strong {
+    font-size: clamp(1.2rem, 5.6vw, 1.45rem) !important;
+    line-height: 1.08;
+  }
+
+  .mobile-navigation__cta {
+    flex: 0 0 auto;
+    margin-top: 18px !important;
+    margin-bottom: 0 !important;
+  }
+}

@@ -1179,3 +1179,18 @@
     margin-bottom: 0 !important;
   }
 }
+
+/* =========================================================
+   MOBILE SECTION RHYTHM — End-to-End Solutions -> About Us
+   Reduce only the oversized transition gap between these
+   adjacent sections; desktop and all other spacing stay intact.
+   ========================================================= */
+@media (max-width: 767px) {
+  .solutions-gallery {
+    padding-bottom: 48px !important;
+  }
+
+  .about-editorial {
+    padding-top: 48px !important;
+  }
+}

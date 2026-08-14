@@ -1,4 +1,3 @@
-@'
 import type { NextConfig } from "next";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -31,4 +30,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-'@ | Set-Content ".\next.config.ts"

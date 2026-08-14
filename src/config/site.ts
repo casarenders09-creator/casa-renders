@@ -1,3 +1,5 @@
+import { publicAsset } from "@/lib/publicAsset";
+
 export const siteConfig = {
   name: "Casa Renders",
   tagline: "Design for Better Living",
@@ -47,19 +49,19 @@ export const siteConfig = {
 
   /** Set to true when public/downloads/casa-renders-company-profile.pdf is added */
   companyProfileAvailable: false,
-  companyProfilePath: "/downloads/casa-renders-company-profile.pdf",
+  companyProfilePath: publicAsset("/downloads/casa-renders-company-profile.pdf"),
 
   hero: {
-    videoMp4: "/videos/interior-hero.mp4",
-    videoWebm: "/videos/interior-hero.webm",
-    posterPath: "/images/interior-hero-poster.webp",
-    fallbackPosterPath: "/images/hero/hero-placeholder.svg",
+    videoMp4: publicAsset("/videos/interior-hero.mp4"),
+    videoWebm: publicAsset("/videos/interior-hero.webm"),
+    posterPath: publicAsset("/images/interior-hero-poster.webp"),
+    fallbackPosterPath: publicAsset("/images/hero/hero-placeholder.svg"),
     scrollHeightVh: 165,
   },
 
   logo: {
-    default: "/images/logo/casa-renders-logo.png",
-    light: "/images/logo/casa-renders-logo.png",
+    default: publicAsset("/images/logo/casa-renders-logo.png"),
+    light: publicAsset("/images/logo/casa-renders-logo.png"),
     width: 96,
     height: 96,
     // TODO: Replace with a transparent-background PNG/SVG for cleaner use on dark footer and hero.

@@ -1,3 +1,5 @@
+import { publicAsset } from "@/lib/publicAsset";
+
 export type DesignIdeaCategory = {
   id: string;
   title: string;
@@ -26,14 +28,14 @@ export const designIdeaCategories: DesignIdeaCategory[] = [
   {
     id: "bathroom",
     title: "Bathroom / Powder Room",
-    image: "/images/references/bathroom.webp",
+    image: publicAsset("/images/references/bathroom.webp"),
     alt: "Bathroom and powder room design inspiration",
     note: "Stone, lighting and wet-area detailing",
   },
   {
     id: "wardrobe",
     title: "Wardrobe & Storage",
-    image: "/images/references/wardrobe.webp",
+    image: publicAsset("/images/references/wardrobe.webp"),
     alt: "Wardrobe and storage design inspiration",
     note: "Integrated storage without visual clutter",
   },

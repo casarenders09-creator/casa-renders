@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
 
-  basePath: process.env.PAGES_BASE_PATH ?? "",
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH ?? "",
 
   transpilePackages: ["gsap"],
 

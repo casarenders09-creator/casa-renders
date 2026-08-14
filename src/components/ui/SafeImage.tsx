@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { ImgHTMLAttributes } from "react";
+import { publicAsset } from "@/lib/publicAsset";
 
 type SafeImageProps = ImgHTMLAttributes<HTMLImageElement> & {
   fallbackSrc?: string;
@@ -9,7 +10,7 @@ type SafeImageProps = ImgHTMLAttributes<HTMLImageElement> & {
 
 export function SafeImage({
   src,
-  fallbackSrc = "/images/hero/hero-placeholder.svg",
+  fallbackSrc = publicAsset("/images/hero/hero-placeholder.svg"),
   alt,
   onError,
   ...props

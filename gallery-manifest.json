@@ -1,0 +1,658 @@
+{
+  "bathroom": [
+    {
+      "output": "/images/gallery/bathroom/01.webp",
+      "source": "download (5).jpg",
+      "width": 735,
+      "height": 919,
+      "bytes": 71276,
+      "cover": true
+    },
+    {
+      "output": "/images/gallery/bathroom/02.webp",
+      "source": "download (1).jpg",
+      "width": 736,
+      "height": 982,
+      "bytes": 62386,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/bathroom/03.webp",
+      "source": "download (2).jpg",
+      "width": 736,
+      "height": 1308,
+      "bytes": 59744,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/bathroom/04.webp",
+      "source": "download (3).jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 64078,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/bathroom/05.webp",
+      "source": "download (4).jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 56442,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/bathroom/06.webp",
+      "source": "download.jpg",
+      "width": 735,
+      "height": 919,
+      "bytes": 61264,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/bathroom/07.webp",
+      "source": "Modern Floating Storage_ Shop Wall Hung Vanity Units with Basins Online.jpg",
+      "width": 735,
+      "height": 1105,
+      "bytes": 97094,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/bathroom/08.webp",
+      "source": "Modern showers UK_ High-end designs and Hansgrohe shower sets.jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 78050,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/bathroom/09.webp",
+      "source": "Modern Suburban Plot Ideas That Actually Work in 2026.jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 72128,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/bathroom/10.webp",
+      "source": "Warm Contemporary Bathroom with Natural Stone.jpg",
+      "width": 735,
+      "height": 1105,
+      "bytes": 82658,
+      "cover": false
+    }
+  ],
+  "bedroom": [
+    {
+      "output": "/images/gallery/bedroom/01.webp",
+      "source": "Modern Bedroom Decor Ideas _ Cozy & Luxury Bedroom Design Inspiration.jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 71560,
+      "cover": true
+    },
+    {
+      "output": "/images/gallery/bedroom/02.webp",
+      "source": "Beige Quiet Luxury Bedroom with LED Ceiling & Backlit Accent Wall _ Modern Master Bedroom Ideas.jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 46628,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/bedroom/03.webp",
+      "source": "Boho Bedroom Design _ Cozy & Colorful Bohemian Decor.jpg",
+      "width": 736,
+      "height": 1313,
+      "bytes": 97700,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/bedroom/04.webp",
+      "source": "download (1).jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 85900,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/bedroom/05.webp",
+      "source": "download.jpg",
+      "width": 736,
+      "height": 736,
+      "bytes": 66218,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/bedroom/06.webp",
+      "source": "Elegant Modern Bedroom Design Ideas 2025.jpg",
+      "width": 736,
+      "height": 1313,
+      "bytes": 65944,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/bedroom/07.webp",
+      "source": "How to Improve Weird Tray Ceiling Design_.jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 88222,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/bedroom/08.webp",
+      "source": "Minimalist Cozy Bedroom Vibes.jpg",
+      "width": 736,
+      "height": 1103,
+      "bytes": 90696,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/bedroom/09.webp",
+      "source": "Modern Earthy WARM BEDROOM AESTHETIC That Feels Calm & Luxe.jpg",
+      "width": 736,
+      "height": 673,
+      "bytes": 66252,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/bedroom/10.webp",
+      "source": "Modern Luxury Bedroom Decor.jpg",
+      "width": 736,
+      "height": 676,
+      "bytes": 51958,
+      "cover": false
+    }
+  ],
+  "cafe-restaurant": [
+    {
+      "output": "/images/gallery/cafe-restaurant/01.webp",
+      "source": "kazakh coffeehouse muddes.jpg",
+      "width": 736,
+      "height": 870,
+      "bytes": 85962,
+      "cover": true
+    },
+    {
+      "output": "/images/gallery/cafe-restaurant/02.webp",
+      "source": "ALAKOL BASE _ Cafe 130 m2 - EMILY'S SOLUTION.jpg",
+      "width": 736,
+      "height": 1051,
+      "bytes": 91202,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/cafe-restaurant/03.webp",
+      "source": "download (1).jpg",
+      "width": 736,
+      "height": 981,
+      "bytes": 97528,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/cafe-restaurant/04.webp",
+      "source": "download (2).jpg",
+      "width": 736,
+      "height": 1308,
+      "bytes": 78818,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/cafe-restaurant/05.webp",
+      "source": "download (3).jpg",
+      "width": 736,
+      "height": 981,
+      "bytes": 116396,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/cafe-restaurant/06.webp",
+      "source": "download (4).jpg",
+      "width": 736,
+      "height": 981,
+      "bytes": 64710,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/cafe-restaurant/07.webp",
+      "source": "download.jpg",
+      "width": 736,
+      "height": 981,
+      "bytes": 91018,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/cafe-restaurant/08.webp",
+      "source": "Wood Pendant Lights by HANMN Lighting.jpg",
+      "width": 736,
+      "height": 1113,
+      "bytes": 78532,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/cafe-restaurant/09.webp",
+      "source": "Would choose a Café any day anytime 🖤.jpg",
+      "width": 736,
+      "height": 981,
+      "bytes": 101556,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/cafe-restaurant/10.webp",
+      "source": "تصميم افتراضي _لمقهى.jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 85480,
+      "cover": false
+    }
+  ],
+  "modular-kitchen": [
+    {
+      "output": "/images/gallery/modular-kitchen/01.webp",
+      "source": "Elegant Modern Modular Kitchen Interior.jpg",
+      "width": 736,
+      "height": 736,
+      "bytes": 71434,
+      "cover": true
+    },
+    {
+      "output": "/images/gallery/modular-kitchen/02.webp",
+      "source": "download (3).jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 51560,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/modular-kitchen/03.webp",
+      "source": "Elegant U-Shaped Modular Kitchen Design with Warm LED Lighting.jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 77348,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/modular-kitchen/04.webp",
+      "source": "Home Decor & Interior Design Ideas _ Modern, Cozy & Stylish Spaces ✨.jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 74456,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/modular-kitchen/05.webp",
+      "source": "Imagine a kitchen that's not just functional, but also a stunning masterpiece_ ✨ Spacemap Interiors.jpg",
+      "width": 735,
+      "height": 858,
+      "bytes": 28868,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/modular-kitchen/06.webp",
+      "source": "Kitchen Renovation Ideas 🤍🖤.jpg",
+      "width": 660,
+      "height": 875,
+      "bytes": 43398,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/modular-kitchen/07.webp",
+      "source": "Luxury U-Shaped Kitchen Design 2026 _ Modern Beige & Black Kitchen with Marble Backsplash.jpg",
+      "width": 735,
+      "height": 1105,
+      "bytes": 111986,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/modular-kitchen/08.webp",
+      "source": "Modern Gray Luxury Kitchen with Gloss Cabinets and Under Cabinet Lighting.jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 88700,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/modular-kitchen/09.webp",
+      "source": "Modern Wood & Marble Kitchen Inspiration.jpg",
+      "width": 736,
+      "height": 736,
+      "bytes": 63444,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/modular-kitchen/10.webp",
+      "source": "Stylish Kitchen Design with Smart Storage _ MSHOME.jpg",
+      "width": 735,
+      "height": 985,
+      "bytes": 43810,
+      "cover": false
+    }
+  ],
+  "living-room": [
+    {
+      "output": "/images/gallery/living-room/01.webp",
+      "source": "25 Marble Floor Living Room Ideas for Luxurious Interiors.jpg",
+      "width": 736,
+      "height": 946,
+      "bytes": 79224,
+      "cover": true
+    },
+    {
+      "output": "/images/gallery/living-room/02.webp",
+      "source": "29 Black and White Decor Themes for Timeless Sophistication.jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 91714,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/living-room/03.webp",
+      "source": "Beautiful Living Room Inspiration ✨.jpg",
+      "width": 735,
+      "height": 937,
+      "bytes": 54404,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/living-room/04.webp",
+      "source": "download (1).jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 64328,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/living-room/05.webp",
+      "source": "download (2).jpg",
+      "width": 735,
+      "height": 919,
+      "bytes": 96794,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/living-room/06.webp",
+      "source": "download.jpg",
+      "width": 736,
+      "height": 736,
+      "bytes": 71120,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/living-room/07.webp",
+      "source": "Modern Cozy Living Room ✨.jpg",
+      "width": 736,
+      "height": 1071,
+      "bytes": 92844,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/living-room/08.webp",
+      "source": "Modern Luxury Living Room in Warm Neutral Tones.jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 87212,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/living-room/09.webp",
+      "source": "Modern Luxury Living Room _ Neutral Interior Design Ideas.jpg",
+      "width": 736,
+      "height": 736,
+      "bytes": 32354,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/living-room/10.webp",
+      "source": "🛋️ Complete Living Room Solutions _ Sunrise Furniture & Architecture_From layout planning to furniture and final styling – we transform spaces into dream homes__Get inspired with these two unique living room designs ✨__#InteriorDe.jpg",
+      "width": 736,
+      "height": 736,
+      "bytes": 51120,
+      "cover": false
+    }
+  ],
+  "puja-mandir": [
+    {
+      "output": "/images/gallery/puja-mandir/01.webp",
+      "source": "home interior design.jpg",
+      "width": 735,
+      "height": 919,
+      "bytes": 98142,
+      "cover": true
+    },
+    {
+      "output": "/images/gallery/puja-mandir/02.webp",
+      "source": "(Mandir)Temple for Home.jpg",
+      "width": 736,
+      "height": 924,
+      "bytes": 66854,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/puja-mandir/03.webp",
+      "source": "download (4).jpg",
+      "width": 736,
+      "height": 1156,
+      "bytes": 63446,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/puja-mandir/04.webp",
+      "source": "Elegant White Marble Home Temple Design _ Luxury Pooja Room Inspiration.jpg",
+      "width": 736,
+      "height": 919,
+      "bytes": 73998,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/puja-mandir/05.webp",
+      "source": "Luxurious Modern Wooden Mandir Design with LED Lighting _ Elegant Home Temple Decor Inspiration.jpg",
+      "width": 735,
+      "height": 919,
+      "bytes": 106894,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/puja-mandir/06.webp",
+      "source": "Minimal Mandir Design Ideas for Modern Indian Homes _ Neutral & Elegant Pooja Room.jpg",
+      "width": 736,
+      "height": 1307,
+      "bytes": 111392,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/puja-mandir/07.webp",
+      "source": "Modern Indian Home Pooja Mandir Design ✨.jpg",
+      "width": 736,
+      "height": 1308,
+      "bytes": 93090,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/puja-mandir/08.webp",
+      "source": "Modern Pooja Rooms with a Traditional Touch.jpg",
+      "width": 736,
+      "height": 736,
+      "bytes": 56168,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/puja-mandir/09.webp",
+      "source": "prayer room designs.jpg",
+      "width": 736,
+      "height": 736,
+      "bytes": 27116,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/puja-mandir/10.webp",
+      "source": "The KariGhars_ Modern Puja Mandir Designs For Home In Bangalore _ Best Interior Designers.jpg",
+      "width": 736,
+      "height": 981,
+      "bytes": 80314,
+      "cover": false
+    }
+  ],
+  "terrace": [
+    {
+      "output": "/images/gallery/terrace/01.webp",
+      "source": "Minimalist Zen Bedroom Balcony Retreat - 24 Bedroom Balcony Ideas for Small Outdoor Retreats.jpg",
+      "width": 735,
+      "height": 945,
+      "bytes": 128492,
+      "cover": true
+    },
+    {
+      "output": "/images/gallery/terrace/02.webp",
+      "source": "15 Unique Tiny Townhouse Patio Ideas _ TheGrow.jpg",
+      "width": 736,
+      "height": 981,
+      "bytes": 99442,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/terrace/03.webp",
+      "source": "18 Simple Terrace Ideas That Feel Clean & Relaxed.jpg",
+      "width": 704,
+      "height": 1024,
+      "bytes": 64402,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/terrace/04.webp",
+      "source": "20 Large Balcony Ideas For Stunning Outdoor Spaces.jpg",
+      "width": 236,
+      "height": 295,
+      "bytes": 12814,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/terrace/05.webp",
+      "source": "23 Very Small Balcony Ideas That Actually Work.jpg",
+      "width": 736,
+      "height": 1349,
+      "bytes": 132360,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/terrace/06.webp",
+      "source": "download.jpg",
+      "width": 736,
+      "height": 1288,
+      "bytes": 112112,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/terrace/07.webp",
+      "source": "Luxury Outdoor Furniture in Dubai _ Stylish Outdoor Living.jpg",
+      "width": 736,
+      "height": 1097,
+      "bytes": 100538,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/terrace/08.webp",
+      "source": "Modern Luxury Balcony Design with Outdoor Bar Unit.jpg",
+      "width": 736,
+      "height": 980,
+      "bytes": 119098,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/terrace/09.webp",
+      "source": "Modern Luxury Balcony Lounge with Cozy Outdoor Seating & City Views.jpg",
+      "width": 736,
+      "height": 1318,
+      "bytes": 116224,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/terrace/10.webp",
+      "source": "Wood Look Balcony Tiles for Natural Warmth - 20 Balcony Tiles Ideas Stylish Outdoor Flooring.jpg",
+      "width": 735,
+      "height": 945,
+      "bytes": 120716,
+      "cover": false
+    }
+  ],
+  "wardrobe-storage": [
+    {
+      "output": "/images/gallery/wardrobe-storage/01.webp",
+      "source": "✨ Modern Luxury Wardrobe & Vanity Cabinet Design.jpg",
+      "width": 736,
+      "height": 1308,
+      "bytes": 72226,
+      "cover": true
+    },
+    {
+      "output": "/images/gallery/wardrobe-storage/02.webp",
+      "source": "Aesthetic Wardrobe Design Ideas for a Modern Luxury Bedroom.jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 44032,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/wardrobe-storage/03.webp",
+      "source": "Built-In Wardrobe with LED Shelf Lighting in Luxury Bedroom.jpg",
+      "width": 736,
+      "height": 1104,
+      "bytes": 69088,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/wardrobe-storage/04.webp",
+      "source": "design modern bedroom.jpg",
+      "width": 736,
+      "height": 1308,
+      "bytes": 43348,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/wardrobe-storage/05.webp",
+      "source": "download (1).jpg",
+      "width": 736,
+      "height": 736,
+      "bytes": 22994,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/wardrobe-storage/06.webp",
+      "source": "download.jpg",
+      "width": 736,
+      "height": 869,
+      "bytes": 29746,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/wardrobe-storage/07.webp",
+      "source": "Luxury Wardrobe Design.jpg",
+      "width": 736,
+      "height": 1308,
+      "bytes": 72484,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/wardrobe-storage/08.webp",
+      "source": "Modern luxury wardrobe design.jpg",
+      "width": 736,
+      "height": 589,
+      "bytes": 57792,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/wardrobe-storage/09.webp",
+      "source": "Small Space Storage Idea _ Wardrobe _ Closet _ Minimalist Cupboard Design for Modern Home Decor ❤️.jpg",
+      "width": 736,
+      "height": 919,
+      "bytes": 74742,
+      "cover": false
+    },
+    {
+      "output": "/images/gallery/wardrobe-storage/10.webp",
+      "source": "This Modern Wardrobe Design Looks So Expensive.jpg",
+      "width": 736,
+      "height": 1311,
+      "bytes": 26640,
+      "cover": false
+    }
+  ]
+}

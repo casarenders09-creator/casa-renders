@@ -1,0 +1,1499 @@
+/* Casa Renders — dedicated phone composition.
+   Loaded after globals.css so desktop remains unchanged and phone rules win. */
+
+.why-mobile-grid,
+.industry-mobile-list,
+.move-in-process__mobile-list {
+  display: none;
+}
+
+.mobile-hero-story { display: none; }
+.mobile-hero-v6 { display: none; }
+.hero-desktop-story { display: block; }
+
+@media (max-width: 767px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    /*
+     * Do not use overflow:hidden on a vertical ancestor of the mobile hero:
+     * it creates a scrolling/clipping ancestor and breaks position: sticky.
+     * clip prevents horizontal spill without becoming a scroll container.
+     */
+    overflow-x: clip;
+    overflow-y: visible;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  .site-shell {
+    padding: 0 !important;
+    overflow-x: clip;
+  }
+
+  .site-canvas {
+    width: 100%;
+    max-width: 100%;
+    /* Required for the mobile hero's sticky media layer. */
+    overflow: visible;
+    border-radius: 0 !important;
+  }
+
+  main {
+    width: 100%;
+    max-width: 100%;
+    /* Required for the mobile hero's sticky media layer. */
+    overflow: visible;
+  }
+
+  .content-container {
+    width: calc(100% - 32px) !important;
+    max-width: none;
+  }
+
+  .section-block {
+    padding-block: 64px !important;
+    scroll-margin-top: 72px;
+  }
+
+  .section-eyebrow,
+  .section-index p {
+    font-size: 0.61rem;
+    letter-spacing: 0.15em;
+  }
+
+  .section-index {
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  .section-index span {
+    width: 34px;
+    height: 34px;
+    font-size: 0.72rem;
+  }
+
+  .display-heading {
+    font-size: clamp(2.65rem, 11.5vw, 3.55rem) !important;
+    line-height: 0.98 !important;
+    letter-spacing: -0.05em;
+  }
+
+  /* Header */
+  .site-header {
+    top: 0;
+    margin-bottom: -66px !important;
+  }
+
+  .site-header__inner {
+    min-height: 64px !important;
+    padding: 7px 10px 7px 12px !important;
+    border-radius: 0 0 16px 16px !important;
+  }
+
+  .brand-lockup img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .menu-toggle {
+    width: 42px;
+    height: 42px;
+  }
+
+  /* Mobile hero is defined as its own scroll story near the end of this media query. */
+
+  /* Why choose us: readable 2 x 3 grid instead of a tiny moving marquee. */
+  .why-marquee {
+    padding: 34px 0 30px !important;
+  }
+
+  .why-marquee__label {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    gap: 3px !important;
+    margin-bottom: 18px;
+  }
+
+  .why-marquee__label p {
+    font-size: 0.78rem;
+    line-height: 1.45;
+  }
+
+  .why-marquee__viewport--desktop {
+    display: none !important;
+  }
+
+  .why-mobile-grid {
+    display: grid;
+    width: calc(100% - 32px);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: rgba(23, 54, 64, 0.11);
+    border: 1px solid rgba(23, 54, 64, 0.1);
+    border-radius: 16px;
+  }
+
+  .why-mobile-grid article {
+    display: grid;
+    min-height: 118px;
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 10px;
+    align-content: center;
+    padding: 15px 12px;
+    background: var(--white);
+  }
+
+  .why-mobile-grid article > b {
+    display: grid;
+    width: 32px;
+    height: 32px;
+    place-items: center;
+    color: var(--ink);
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    font-family: var(--serif);
+    font-size: 0.78rem;
+  }
+
+  .why-mobile-grid article div,
+  .why-mobile-grid article strong,
+  .why-mobile-grid article span {
+    min-width: 0;
+  }
+
+  .why-mobile-grid article strong,
+  .why-mobile-grid article span {
+    display: block;
+  }
+
+  .why-mobile-grid article strong {
+    font-size: 0.87rem;
+    line-height: 1.2;
+  }
+
+  .why-mobile-grid article span {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: 0.61rem;
+    line-height: 1.35;
+  }
+
+  .why-marquee__note {
+    margin-top: 12px !important;
+    font-size: 0.58rem !important;
+    line-height: 1.45;
+  }
+
+  /* Solutions: one strong card per swipe. */
+  .solutions-gallery__header,
+  .promotion-section__header,
+  .move-in-process__header {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 18px !important;
+  }
+
+  .solutions-gallery__header {
+    margin-bottom: 18px !important;
+  }
+
+  .solutions-gallery__intro p,
+  .promotion-section__header > div:last-child > p,
+  .move-in-process__header > p {
+    font-size: 0.88rem !important;
+    line-height: 1.55;
+  }
+
+  .solutions-gallery__intro span {
+    white-space: normal !important;
+    font-size: 0.52rem !important;
+    line-height: 1.4;
+  }
+
+  .solutions-gallery__controls,
+  .promotion-section__arrows {
+    gap: 7px;
+  }
+
+  .solutions-gallery__controls button,
+  .promotion-section__arrows button {
+    min-width: 40px !important;
+    height: 40px !important;
+  }
+
+  .solutions-gallery__rail,
+  .promotion-section__rail {
+    width: 100%;
+    gap: 12px !important;
+    padding: 2px 0 12px !important;
+    overflow-x: auto !important;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory !important;
+    scroll-padding-inline: 0;
+    scrollbar-width: none;
+  }
+
+  .solution-category-card {
+    width: 100% !important;
+    min-width: 100% !important;
+    flex: 0 0 100% !important;
+    min-height: 450px !important;
+    border-radius: 18px !important;
+    scroll-snap-align: start !important;
+    scroll-snap-stop: always;
+  }
+
+  .solution-category-card__number {
+    top: 16px !important;
+    right: 16px !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .solution-category-card > div {
+    right: 18px !important;
+    bottom: 54px !important;
+    left: 18px !important;
+  }
+
+  .solution-category-card h3 {
+    margin: 8px 0 8px !important;
+    font-size: clamp(2.2rem, 10.5vw, 2.85rem) !important;
+  }
+
+  .solution-category-card p {
+    font-size: 0.74rem !important;
+    line-height: 1.45;
+  }
+
+  .solution-category-card > b {
+    bottom: 18px !important;
+    left: 18px !important;
+  }
+
+  /* About: force a true one-column story. */
+  .about-editorial__grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 0 !important;
+  }
+
+  .about-editorial__grid > * {
+    width: 100% !important;
+    min-width: 0 !important;
+    grid-column: 1 / -1 !important;
+  }
+
+  .about-editorial__title {
+    margin-bottom: 30px;
+  }
+
+  .about-editorial__title .display-heading {
+    font-size: clamp(2.75rem, 11.5vw, 3.45rem) !important;
+  }
+
+  .about-editorial__copy {
+    padding-top: 24px !important;
+    border-top: 1px solid var(--line);
+  }
+
+  .about-editorial__copy .lead {
+    max-width: none !important;
+    margin-bottom: 22px !important;
+    font-size: 1.28rem !important;
+    line-height: 1.42 !important;
+  }
+
+  .about-editorial__body {
+    display: block !important;
+  }
+
+  .about-editorial__body p,
+  .about-editorial__copy p {
+    width: 100% !important;
+    max-width: none !important;
+    margin-bottom: 14px !important;
+    font-size: 0.91rem !important;
+    line-height: 1.62 !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .about-editorial__copy blockquote {
+    width: 100%;
+    max-width: none !important;
+    margin: 28px 0 0 !important;
+    padding: 18px 0 0 15px !important;
+    font-size: 1.12rem !important;
+    line-height: 1.42 !important;
+  }
+
+  .about-definitions {
+    display: grid !important;
+    width: 100%;
+    margin-top: 34px;
+    border-top: 1px solid var(--line);
+  }
+
+  .about-definitions article {
+    grid-template-columns: 34px minmax(0, 1fr) !important;
+    gap: 12px !important;
+    min-height: 0 !important;
+    padding: 18px 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-bottom: 1px solid var(--line) !important;
+    border-radius: 0 !important;
+  }
+
+  .about-definitions h3 {
+    font-size: 1.9rem !important;
+    line-height: 1 !important;
+  }
+
+  .about-definitions p {
+    width: 100%;
+    max-width: none !important;
+    font-size: 0.76rem !important;
+    line-height: 1.45 !important;
+  }
+
+  /* Experience: keep the credibility section readable and compact. */
+  .experience-marquee-section {
+    padding-block: 64px !important;
+  }
+
+  .experience-marquee-section__header {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .experience-marquee-section__header h2 {
+    font-size: clamp(2.55rem, 11vw, 3.35rem) !important;
+  }
+
+  /*
+   * Experience orientation fix:
+   * Keep the intro copy full-width, then present the four credibility facts
+   * as a clean 2x2 matrix. globals.css otherwise lets the paragraph occupy
+   * the first grid cell on phones, which creates the staggered layout.
+   */
+  .experience-marquee-section__aside {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 18px 20px !important;
+  }
+
+  .experience-marquee-section__aside > p {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 0 6px !important;
+  }
+
+  .experience-marquee-section__aside div {
+    min-height: 78px !important;
+  }
+
+  .experience-facts,
+  .experience-timeline__rail {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .experience-facts article,
+  .experience-timeline__rail article {
+    min-height: 142px !important;
+    padding: 18px 14px !important;
+  }
+
+  /* Experience logos — mobile containment and readable labels */
+  .logo-marquee__track article.experience-logo-card {
+    box-sizing: border-box !important;
+    display: grid !important;
+    grid-template-rows: 86px 42px !important;
+    flex: 0 0 184px !important;
+    width: 184px !important;
+    min-width: 184px !important;
+    max-width: 184px !important;
+    height: 148px !important;
+    min-height: 148px !important;
+    gap: 6px !important;
+    padding: 8px !important;
+    overflow: hidden !important;
+  }
+
+  .logo-marquee__track .experience-logo-card__plaque {
+    box-sizing: border-box !important;
+    display: flex !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 86px !important;
+    min-height: 86px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 10px 12px !important;
+    overflow: hidden !important;
+    border-radius: 13px !important;
+  }
+
+  .logo-marquee__track .experience-logo-card__plaque img {
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: 144px !important;
+    max-height: 58px !important;
+    object-fit: contain !important;
+  }
+
+  .logo-marquee__track
+    .experience-logo-card--square
+    .experience-logo-card__plaque
+    img {
+    max-width: 58px !important;
+    max-height: 58px !important;
+  }
+
+  .logo-marquee__track
+    .experience-logo-card--wide
+    .experience-logo-card__plaque
+    img {
+    max-width: 146px !important;
+    max-height: 50px !important;
+  }
+
+  .logo-marquee__track .experience-logo-card__meta {
+    box-sizing: border-box !important;
+    display: flex !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: 42px !important;
+    min-height: 42px !important;
+    max-height: 42px !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    padding: 0 4px !important;
+    overflow: hidden !important;
+    text-align: center !important;
+  }
+
+  .logo-marquee__track .experience-logo-card__meta span {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    overflow: hidden !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+
+    color: rgba(255, 255, 255, 0.78) !important;
+    font-size: 0.46rem !important;
+    font-weight: 750 !important;
+    letter-spacing: 0.035em !important;
+    line-height: 1.25 !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+  }
+
+  .logo-marquee__track .experience-logo-card__meta small {
+    display: none !important;
+  }
+
+  /* Three disciplines */
+  .pillar-story {
+    grid-template-columns: 1fr !important;
+    border-radius: 18px !important;
+  }
+
+  .pillar-story__media {
+    min-height: 315px !important;
+  }
+
+  .pillar-story__copy {
+    padding: 24px 18px 28px !important;
+  }
+
+  .pillar-story__copy h3 {
+    font-size: clamp(2.25rem, 10vw, 2.9rem) !important;
+  }
+
+  .pillar-story__copy ul {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Starting-price offers */
+  .promotion-section__header {
+    margin-bottom: 22px !important;
+  }
+
+  .promotion-card {
+    width: 100% !important;
+    min-width: 100% !important;
+    flex: 0 0 100% !important;
+    border-radius: 18px !important;
+    scroll-snap-align: start !important;
+    scroll-snap-stop: always;
+  }
+
+  .promotion-card__media {
+    height: 258px !important;
+  }
+
+  .promotion-card__body {
+    padding: 18px !important;
+  }
+
+  .promotion-card__body h3,
+  .promotion-card__body > strong {
+    font-size: 1.48rem !important;
+  }
+
+  .promotion-card__body button {
+    min-height: 45px;
+  }
+
+  /* Spaces we support: no clipped infinite headline on phones. */
+  .industry-ticker {
+    padding: 48px 0 !important;
+  }
+
+  .industry-ticker__intro {
+    width: calc(100% - 32px) !important;
+    margin: 0 auto 20px !important;
+    font-size: 0.58rem !important;
+    line-height: 1.4;
+  }
+
+  .industry-ticker__track--desktop {
+    display: none !important;
+  }
+
+  .industry-mobile-list {
+    display: grid;
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 1px solid var(--line);
+    border-left: 1px solid var(--line);
+  }
+
+  .industry-mobile-list article {
+    min-height: 98px;
+    padding: 15px 12px;
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .industry-mobile-list article span,
+  .industry-mobile-list article strong {
+    display: block;
+  }
+
+  .industry-mobile-list article span {
+    color: var(--muted);
+    font-size: 0.55rem;
+  }
+
+  .industry-mobile-list article strong {
+    margin-top: 18px;
+    font-family: var(--serif);
+    font-size: 1.18rem;
+    font-weight: 500;
+    line-height: 1.05;
+  }
+
+  /* Library */
+  .ideas-gallery__header {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .ideas-gallery__header > p {
+    font-size: 0.84rem !important;
+    line-height: 1.55;
+  }
+
+  .ideas-gallery__grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+
+  .idea-card,
+  .idea-card--1,
+  .idea-card--2,
+  .idea-card--3,
+  .idea-card--4,
+  .idea-card--5,
+  .idea-card--6,
+  .idea-card--7 {
+    grid-column: auto !important;
+    margin: 0 !important;
+  }
+
+  .idea-card__media,
+  .idea-card--3 .idea-card__media,
+  .idea-card--4 .idea-card__media,
+  .idea-card--5 .idea-card__media {
+    height: 330px !important;
+    border-radius: 18px !important;
+  }
+
+  .idea-card figcaption {
+    padding-top: 13px !important;
+  }
+
+  .idea-card h3 {
+    font-size: 1.72rem !important;
+  }
+
+  .idea-card figcaption p {
+    font-size: 0.7rem !important;
+  }
+
+  /* Process: phone-native accordion instead of eight tiny step circles. */
+  .move-in-process__stepper,
+  .move-in-process__stage {
+    display: none !important;
+  }
+
+  .move-in-process__mobile-list {
+    display: block;
+    border-top: 1px solid var(--line);
+  }
+
+  .move-in-process__mobile-list details {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .move-in-process__mobile-list summary {
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr) 28px;
+    gap: 10px;
+    align-items: center;
+    min-height: 72px;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .move-in-process__mobile-list summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .move-in-process__mobile-list summary > span {
+    color: var(--bronze);
+    font-size: 0.58rem;
+  }
+
+  .move-in-process__mobile-list summary > strong {
+    font-family: var(--serif);
+    font-size: 1.28rem;
+    font-weight: 500;
+    line-height: 1.08;
+  }
+
+  .move-in-process__mobile-list summary > b {
+    font-size: 1.15rem;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .move-in-process__mobile-list details[open] summary > b {
+    transform: rotate(45deg);
+  }
+
+  .move-in-process__mobile-list details > div {
+    padding: 0 0 24px 42px;
+  }
+
+  .move-in-process__mobile-list img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+
+  .move-in-process__mobile-list p {
+    margin: 16px 0 7px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .move-in-process__mobile-list small {
+    display: block;
+    color: var(--muted);
+    font-size: 0.72rem;
+    line-height: 1.5;
+  }
+
+  /* Packages */
+  .packages-section .section-heading-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .packages-accordion > article > button {
+    grid-template-columns: 26px minmax(0, 1fr) 32px !important;
+    gap: 9px !important;
+    padding: 17px 0 !important;
+  }
+
+  .packages-accordion button h3 {
+    font-size: 1.42rem !important;
+  }
+
+  /* Casa TV */
+  .tv-section__feature {
+    grid-template-columns: 1fr !important;
+    min-height: 0 !important;
+    border-radius: 18px !important;
+  }
+
+  .tv-section__visual {
+    min-height: 315px !important;
+  }
+
+  .tv-section__copy {
+    padding: 25px 18px 28px !important;
+  }
+
+  .tv-section__copy .display-heading {
+    font-size: clamp(2.45rem, 10.5vw, 3.05rem) !important;
+  }
+
+  /* Quote */
+  .quote-section {
+    padding-block: 60px 54px !important;
+  }
+
+  .quote-layout {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+
+  .quote-intro h2 {
+    font-size: clamp(2.75rem, 11vw, 3.4rem) !important;
+  }
+
+  .quote-form {
+    padding: 20px 14px !important;
+    border-radius: 17px !important;
+  }
+
+  .quote-form__grid {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+
+  .quote-field,
+  .quote-control input,
+  .quote-control select,
+  .quote-control textarea {
+    font-size: 16px !important;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding-block: 58px 20px !important;
+  }
+
+  .footer-manifesto h2 {
+    font-size: clamp(2.65rem, 11vw, 3.35rem) !important;
+  }
+
+  .footer-divider {
+    margin: 36px 0 30px !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 28px 18px !important;
+  }
+
+  .footer-brand,
+  .footer-grid > div:nth-child(4),
+  .footer-grid > div:nth-child(5) {
+    grid-column: 1 / -1 !important;
+  }
+
+  .footer-grid a,
+  .footer-grid address,
+  .footer-grid > div > span,
+  .footer-brand > p {
+    font-size: 0.77rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .footer-leadership {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 16px !important;
+  }
+
+  .footer-bottom {
+    margin-top: 32px !important;
+    padding-top: 18px !important;
+  }
+
+  .whatsapp-fab {
+    right: 12px !important;
+    bottom: 12px !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-height: 44px !important;
+  }
+
+  /* Entrance choreography is desktop-only. */
+  .motion-ready [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  /* =========================================================
+     MOBILE HERO V8 — desktop scene sequence on mobile.
+     The sticky fix from V7 remains. The same heroScenes used by desktop
+     now crossfade on mobile as each story chapter becomes active.
+     Text still scrolls naturally; JS controls only the scene index.
+     ========================================================= */
+  .hero-desktop-story {
+    display: none !important;
+  }
+
+  .mobile-hero-story {
+    display: none !important;
+  }
+
+  .mobile-hero-v6 {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: visible;
+    color: var(--white);
+    background: var(--ink-deep);
+  }
+
+  .mobile-hero-v6__media {
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100svh;
+    overflow: hidden;
+    background: var(--ink-deep);
+  }
+
+  .mobile-hero-v6__scenes,
+  .mobile-hero-v6__scene,
+  .mobile-hero-v6__scene > img,
+  .mobile-hero-v6__tone,
+  .mobile-hero-v6__vignette {
+    position: absolute;
+    inset: 0;
+  }
+
+  .mobile-hero-v6__scenes {
+    z-index: 0;
+    overflow: hidden;
+    background: var(--ink-deep);
+  }
+
+  .mobile-hero-v6__scene {
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 620ms cubic-bezier(0.22, 0.72, 0.2, 1);
+    will-change: opacity;
+  }
+
+  .mobile-hero-v6__scene.is-active {
+    opacity: 1;
+  }
+
+  .mobile-hero-v6__scene > img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    transform: scale(1.07);
+    filter: saturate(0.94) contrast(1.02);
+    transition: transform 1600ms cubic-bezier(0.2, 0.72, 0.2, 1);
+    will-change: transform;
+  }
+
+  .mobile-hero-v6__scene.is-active > img {
+    transform: scale(1.025);
+  }
+
+  .mobile-hero-v6__tone {
+    z-index: 1;
+    pointer-events: none;
+    background:
+      linear-gradient(180deg, rgba(5, 24, 30, 0.14) 0%, rgba(5, 24, 30, 0.06) 34%, rgba(5, 24, 30, 0.28) 64%, rgba(5, 24, 30, 0.66) 100%),
+      linear-gradient(90deg, rgba(5, 24, 30, 0.58) 0%, rgba(5, 24, 30, 0.28) 52%, rgba(5, 24, 30, 0.08) 100%);
+  }
+
+  .mobile-hero-v6__vignette {
+    z-index: 2;
+    pointer-events: none;
+    box-shadow: inset 0 0 100px rgba(2, 16, 21, 0.28);
+  }
+
+  .mobile-hero-v6__topline {
+    position: absolute;
+    top: 82px;
+    right: 18px;
+    left: 18px;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 0.46rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .mobile-hero-v6__stages {
+    position: relative;
+    z-index: 4;
+    margin-top: -100svh;
+  }
+
+  .mobile-hero-v6__stage {
+    display: flex;
+    min-height: 56svh;
+    align-items: center;
+    padding: 94px 18px 42px;
+  }
+
+  .mobile-hero-v6__stage--intro {
+    min-height: 100svh;
+    align-items: flex-end;
+    padding-bottom: 52px;
+  }
+
+  .mobile-hero-v6__stage--final {
+    min-height: 72svh;
+    padding-bottom: 78px;
+  }
+
+  .mobile-hero-v6__stage-inner {
+    width: 100%;
+    max-width: 520px;
+    margin-inline: auto;
+  }
+
+  .mobile-hero-v6__label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 0.53rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  .mobile-hero-v6__label > span:first-child {
+    color: var(--white);
+    font-family: var(--serif);
+    font-size: 0.92rem;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  .mobile-hero-v6__label i {
+    width: 32px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.58);
+  }
+
+  .mobile-hero-v6__stage h1,
+  .mobile-hero-v6__stage h2 {
+    max-width: 360px;
+    margin: 0;
+    color: var(--white);
+    font-family: var(--serif);
+    font-size: clamp(2.85rem, 13.8vw, 3.95rem);
+    font-weight: 500;
+    letter-spacing: -0.058em;
+    line-height: 0.92;
+    text-wrap: balance;
+    text-shadow: 0 2px 26px rgba(2, 16, 21, 0.3);
+  }
+
+  .mobile-hero-v6__stage h1 > span,
+  .mobile-hero-v6__stage h2 > span {
+    display: inline;
+  }
+
+  .mobile-hero-v6__stage p {
+    max-width: 340px;
+    margin: 16px 0 0;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 0.84rem;
+    line-height: 1.5;
+    text-shadow: 0 1px 18px rgba(2, 16, 21, 0.34);
+  }
+
+  .mobile-hero-v6__credentials {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.28);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+  }
+
+  .mobile-hero-v6__credentials > div {
+    min-width: 0;
+    padding: 11px 6px 11px 0;
+  }
+
+  .mobile-hero-v6__credentials strong,
+  .mobile-hero-v6__credentials span {
+    display: block;
+  }
+
+  .mobile-hero-v6__credentials strong {
+    font-family: var(--serif);
+    font-size: 1.08rem;
+    font-weight: 500;
+  }
+
+  .mobile-hero-v6__credentials span {
+    margin-top: 4px;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 0.44rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    line-height: 1.34;
+    text-transform: uppercase;
+  }
+
+  .mobile-hero-v6__actions {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 22px;
+  }
+
+  .mobile-hero-v6__actions > a:not(.button) {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding-bottom: 4px;
+    color: var(--white);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.56);
+    font-size: 0.7rem;
+    font-weight: 750;
+  }
+
+  /* Restore a restrained entry motion on phones. */
+  .motion-ready [data-reveal] {
+    opacity: 0 !important;
+    transform: translate3d(0, 14px, 0) !important;
+    transition:
+      opacity 500ms ease,
+      transform 590ms cubic-bezier(0.2, 0.75, 0.2, 1) !important;
+  }
+
+  .motion-ready [data-reveal].is-visible {
+    opacity: 1 !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
+
+  /*
+   * V7 sticky guard.
+   * V2 previously set .site-canvas and main to overflow:hidden on phones.
+   * Those ancestors caused the V6 background to scroll away, leaving the
+   * long blank ink/green area seen in hero4.mp4.
+   */
+  .site-canvas,
+  main {
+    overflow: visible !important;
+  }
+
+  .mobile-hero-v6__media {
+    position: sticky !important;
+    top: 0 !important;
+    height: 100svh !important;
+    min-height: 100svh !important;
+  }
+
+  .mobile-hero-v6__scene > img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    object-fit: cover !important;
+  }
+
+  /* Hero chapters must never depend on the global reveal observer. */
+  .mobile-hero-v6__stage-inner {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+}
+
+
+@media (max-width: 380px) {
+  .content-container {
+    width: calc(100% - 28px) !important;
+  }
+
+  .display-heading,
+  .about-editorial__title .display-heading,
+  .quote-intro h2,
+  .footer-manifesto h2 {
+    font-size: clamp(2.45rem, 11.5vw, 3.05rem) !important;
+  }
+
+  .why-mobile-grid article {
+    min-height: 112px;
+    padding: 13px 10px;
+  }
+
+  .solution-category-card {
+    min-height: 425px !important;
+  }
+
+  .promotion-card__media {
+    height: 238px !important;
+  }
+
+  .industry-mobile-list article strong {
+    font-size: 1.08rem;
+  }
+}
+
+
+@media (max-width: 767px) and (prefers-reduced-motion: reduce) {
+  .mobile-hero-v6__scene,
+  .mobile-hero-v6__scene > img,
+  .mobile-hero-story__scene,
+  .mobile-hero-story__stage-inner,
+  .mobile-hero-story__progress > i > b,
+  .motion-ready [data-reveal] {
+    transition: none !important;
+  }
+
+  .motion-ready [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+
+@media (max-width: 380px) {
+  .mobile-hero-v6__stage {
+    padding-inline: 15px;
+  }
+
+  .mobile-hero-v6__stage h1,
+  .mobile-hero-v6__stage h2 {
+    font-size: clamp(2.55rem, 13vw, 3.35rem);
+  }
+
+  .mobile-hero-v6__stage p {
+    font-size: 0.8rem;
+  }
+}
+
+/* =========================================================
+   MOBILE MENU VIEWPORT FIX
+   Keep the entire menu on the paper surface and make the
+   panel itself scroll when all navigation items cannot fit.
+   ========================================================= */
+@media (max-width: 767px) {
+  .mobile-navigation {
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: auto !important;
+    width: 100% !important;
+
+    /* Fallback first, dynamic viewport second for iOS/Android browser chrome. */
+    height: 100vh !important;
+    height: 100dvh !important;
+    min-height: 100svh;
+    max-height: 100dvh !important;
+
+    box-sizing: border-box;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+
+    padding: 14px 20px max(20px, env(safe-area-inset-bottom)) !important;
+    background: var(--paper) !important;
+    scrollbar-width: none;
+  }
+
+  .mobile-navigation::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobile-navigation__top {
+    flex: 0 0 auto;
+    padding-bottom: 12px !important;
+  }
+
+  .mobile-navigation nav {
+    flex: 0 0 auto;
+    margin-top: 10px !important;
+  }
+
+  .mobile-navigation nav button {
+    min-height: 52px;
+    padding: 10px 8px !important;
+  }
+
+  .mobile-navigation nav strong {
+    font-size: clamp(1.2rem, 5.6vw, 1.45rem) !important;
+    line-height: 1.08;
+  }
+
+  .mobile-navigation__cta {
+    flex: 0 0 auto;
+    margin-top: 18px !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* =========================================================
+   MOBILE SECTION RHYTHM — End-to-End Solutions -> About Us
+   Reduce only the oversized transition gap between these
+   adjacent sections; desktop and all other spacing stay intact.
+   ========================================================= */
+@media (max-width: 767px) {
+  .solutions-gallery {
+    padding-bottom: 48px !important;
+  }
+
+  .about-editorial {
+    padding-top: 48px !important;
+  }
+}
+
+/* =========================================================
+   MOBILE EXPERIENCE FINAL HOTFIX
+   Keep credibility facts compact and make logo rows stable on phones.
+   Desktop remains unchanged.
+   ========================================================= */
+@media (max-width: 767px) {
+  .experience-marquee-section {
+    padding-block: 52px !important;
+    overflow: hidden !important;
+  }
+
+  .experience-marquee-section__header {
+    gap: 18px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .experience-marquee-section__header h2 {
+    font-size: clamp(2.35rem, 10vw, 3rem) !important;
+    line-height: 0.98 !important;
+  }
+
+  .experience-marquee-section__aside {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0 18px !important;
+  }
+
+  .experience-marquee-section__aside > p {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    margin: 0 0 18px !important;
+    font-size: 0.82rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .experience-marquee-section__aside div {
+    min-width: 0 !important;
+    min-height: 0 !important;
+    padding: 14px 0 16px !important;
+  }
+
+  .experience-marquee-section__aside div span {
+    display: block !important;
+    max-width: 100% !important;
+    font-family: var(--serif) !important;
+    font-size: clamp(1.75rem, 8.4vw, 2.3rem) !important;
+    font-weight: 500 !important;
+    letter-spacing: -0.035em !important;
+    line-height: 1 !important;
+    white-space: normal !important;
+  }
+
+  .experience-marquee-section__aside div small {
+    display: block !important;
+    max-width: 100% !important;
+    margin-top: 7px !important;
+    font-size: 0.47rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.12em !important;
+    line-height: 1.35 !important;
+    white-space: normal !important;
+  }
+
+  .experience-logo-wall {
+    width: 100% !important;
+    margin-top: 22px !important;
+    overflow: visible !important;
+  }
+
+  .logo-marquee,
+  .logo-marquee--reverse {
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .logo-marquee::-webkit-scrollbar,
+  .logo-marquee--reverse::-webkit-scrollbar {
+    display: none;
+  }
+
+  .logo-marquee + .logo-marquee {
+    margin-top: 10px !important;
+  }
+
+  .logo-marquee__track,
+  .logo-marquee--reverse .logo-marquee__track {
+    display: flex !important;
+    width: max-content !important;
+    min-width: max-content !important;
+    gap: 10px !important;
+    padding: 0 16px 8px !important;
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .logo-marquee__track article[aria-hidden="true"] {
+    display: none !important;
+  }
+
+  .logo-marquee__track article.experience-logo-card {
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex: 0 0 154px !important;
+    width: 154px !important;
+    min-width: 154px !important;
+    max-width: 154px !important;
+    height: 124px !important;
+    min-height: 124px !important;
+    max-height: 124px !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+    padding: 6px !important;
+    overflow: hidden !important;
+  }
+
+  .logo-marquee__track .experience-logo-card__plaque {
+    box-sizing: border-box !important;
+    display: flex !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 78px !important;
+    min-height: 78px !important;
+    max-height: 78px !important;
+    flex: 0 0 78px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 8px 9px !important;
+    overflow: hidden !important;
+    border-radius: 12px !important;
+  }
+
+  .logo-marquee__track .experience-logo-card__plaque img {
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: 126px !important;
+    max-height: 52px !important;
+    object-fit: contain !important;
+  }
+
+  .logo-marquee__track
+    .experience-logo-card--square
+    .experience-logo-card__plaque
+    img {
+    max-width: 52px !important;
+    max-height: 52px !important;
+  }
+
+  .logo-marquee__track
+    .experience-logo-card--wide
+    .experience-logo-card__plaque
+    img {
+    max-width: 132px !important;
+    max-height: 46px !important;
+  }
+
+  .logo-marquee__track .experience-logo-card__meta {
+    box-sizing: border-box !important;
+    display: flex !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: 30px !important;
+    min-height: 30px !important;
+    max-height: 30px !important;
+    flex: 0 0 30px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 3px !important;
+    overflow: hidden !important;
+    text-align: center !important;
+  }
+
+  .logo-marquee__track .experience-logo-card__meta span {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    max-height: 2.6em !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    color: rgba(255, 255, 255, 0.82) !important;
+    font-size: 0.4rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.02em !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+
+  .logo-marquee__track .experience-logo-card__meta small {
+    display: none !important;
+  }
+
+  .experience-disclaimer {
+    margin-top: 18px !important;
+    font-size: 0.7rem !important;
+    line-height: 1.55 !important;
+  }
+}
+
